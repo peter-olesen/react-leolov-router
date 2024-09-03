@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import navStyle from './Navigation.module.scss'
 
 export const Navigation = () => {
@@ -5,19 +6,19 @@ export const Navigation = () => {
     const NavItems = [
         {
             "item": "Hjem",
-            "url": "#Hjem"
+            "url": "/"
         },
         {
             "item": "Advokaterne",
-            "url": "#Advokaterne"
+            "url": "lawyers"
         },
         {
             "item": "Om Leo-Lov",
-            "url": "#Om-Leo-Lov"
+            "url": "about"
         },
         {
             "item": "Kontakt",
-            "url": "#Kontakt"
+            "url": "contact"
         }
     ]
 
@@ -27,7 +28,7 @@ export const Navigation = () => {
                 {NavItems.map((navItem, index) => {
                     return(
                         <li key={index}>
-                            <a href={navItem.url}>{navItem.item}</a>
+                            <NavLink className={({ isActive }) => isActive ? navStyle.active : ''} to={navItem.url}>{navItem.item}</NavLink>
                         </li>
                     )
                 })}

@@ -6,5 +6,5 @@ export default defineConfig({
   build: {
   outDir: 'build',
   },
-  base: "/react-leolov/",
+  base: "",
 });
