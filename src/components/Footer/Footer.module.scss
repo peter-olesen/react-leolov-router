@@ -1,0 +1,54 @@
+@import "../../App.scss";
+
+.Footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+    background: var(--DarkBlue);
+    color: white;
+    padding: 3rem;
+    margin-top: 10rem;
+
+    h4 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    address {
+        font-style: normal;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        margin-left: 0.5rem;
+        padding: 0;
+    
+        li {
+            list-style: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Footer {
+        flex-direction: column;
+        padding: 2rem;
+        margin: 0;
+
+        ul {
+            margin: 0;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px ) {
+    .Footer {
+        gap: 3rem;
+
+    }
+}

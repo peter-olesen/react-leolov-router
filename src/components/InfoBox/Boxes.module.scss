@@ -1,0 +1,67 @@
+@import "../../App.scss";
+
+.InfoBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1198px;
+    margin: 0 auto;
+    padding-top: 4rem;
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+        color: var(--Blue);
+        margin: 3rem 0;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+    }
+
+    .blueText {
+        font-family: 'Jura', sans-serif;
+        color: var(--Blue);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.Left {
+    height: 530px;
+    border: 8px solid var(--DarkBlue);
+    border-right: 4px solid var(--DarkBlue);
+}
+
+.Right {
+    height: 530px;
+    border: 8px solid var(--DarkBlue);
+    border-left: 4px solid var(--DarkBlue);
+}
+
+@media only screen and (max-width: 600px) {
+    .InfoBox {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        border: 4px solid var(--DarkBlue);
+        margin: 1rem;
+        padding-top: 0;
+        justify-self: center;
+    }
+
+    .Left, .Right {
+        border: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 768px ) {
+    .InfoBox {
+        max-width: 600px;
+    }
+}

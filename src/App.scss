@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&display=swap');
+
+:root {
+  --White: #FAFAFA;
+  --Black: #000000;
+  --DarkBlue: #2C3B6F;
+  --Blue: #002BC2;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  background: var(--White);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Jura', sans-serif;
+  margin: 0;
+  font-weight: 400;
+}
+
+.Leo {
+  color: var(--Blue)
+}
