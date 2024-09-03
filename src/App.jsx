@@ -5,6 +5,7 @@ import { About } from './pages/About'
 import { Contact } from './pages/Contact'
 import { MainLayout } from './layouts/MainLayout'
 import { Error404 } from './pages/Error404'
+import './App.scss'
 
 function App() {
 
