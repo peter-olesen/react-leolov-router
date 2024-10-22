@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { PageTitle } from '../components/PageTitle/PageTitle'
 import { Header } from '../components/Header/Header'
 import { Cards, Card } from '../components/Cards/Cards'
@@ -5,7 +6,12 @@ import { Cards, Card } from '../components/Cards/Cards'
 export const Home = () => {
     return (
         <>
-            <PageTitle title="Leo-Lov - Verdens Bedste Advokatfirma!" />
+            <Helmet>
+                <title>Leo-Lov - Verdens Bedste Advokatfirma!</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name='description' content="Leo-Lov's forside" />
+            </Helmet>
+            {/* <PageTitle title="Leo-Lov - Verdens Bedste Advokatfirma!" /> */}
             <Header />
             <Cards>
                 <Card title="Familieret" content="Familieret er en ret alle har. Har du en familie har du sikkert ret til familieret. Medmindre du altid er den der tror du har ret. Så kan vi desværre ikke hjælpe dig." />

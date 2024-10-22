@@ -1,10 +1,16 @@
+import { Helmet } from 'react-helmet-async';
 import { PageTitle } from '../components/PageTitle/PageTitle'
 import { TeamMember, TeamMembers } from '../components/Team/Team'
 
 export const Lawyers = () => {
     return (
         <>
-            <PageTitle title="Leo-Lov's Advokater" />
+            <Helmet>
+                <title>Leo-Lov's Advokater</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name='description' content="Leo-Lov's advokater" />
+            </Helmet>
+            {/* <PageTitle title="Leo-Lov's Advokater" /> */}
             <TeamMembers>
                 <TeamMember avatar="./assets/Images/John-Harbinger.jfif" name="John Harbinger" content="Jeg er den mest successfulde advokat i firmaet. I hvert fald mere end Peter." />
                 <TeamMember avatar="./assets/Images/Peter-Parker.jfif" name="Peter Parker" content="Jeg holder af kaffe og så er jeg helt enormt succesfuld. Meget mere end John" />
