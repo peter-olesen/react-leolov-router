@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { PageTitle } from '../components/PageTitle/PageTitle'
 import { TeamMember, TeamMembers } from '../components/Team/Team'
+import opengraphLawyers from '../assets/Images/opengraph/leolov-lawyers.png'
+
 
 export const Lawyers = () => {
     return (
@@ -9,6 +11,11 @@ export const Lawyers = () => {
                 <title>Leo-Lov's Advokater</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name='description' content="Leo-Lov's advokater" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Leo-Lov's Advokater" />
+                <meta property="og:description" content="Leo-Lov's advokater" />
+                <meta property="og:url" content="https://react-leolov.netlify.app/lawyers" />
+                <meta property="og:image" content={opengraphLawyers} />
             </Helmet>
             {/* <PageTitle title="Leo-Lov's Advokater" /> */}
             <TeamMembers>

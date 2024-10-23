@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { PageTitle } from '../components/PageTitle/PageTitle'
 import { Header } from '../components/Header/Header'
 import { Cards, Card } from '../components/Cards/Cards'
+import opengraphFrontpage from '../assets/Images/opengraph/leolov-frontpage.png'
 
 export const Home = () => {
     return (
@@ -10,6 +11,11 @@ export const Home = () => {
                 <title>Leo-Lov - Verdens Bedste Advokatfirma!</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name='description' content="Leo-Lov's forside" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Leo-Lov - Verdens Bedste Advokatfirma!" />
+                <meta property="og:description" content="Leo-Lov's forside" />
+                <meta property="og:url" content="https://react-leolov.netlify.app/" />
+                <meta property="og:image" content={opengraphFrontpage} />
             </Helmet>
             {/* <PageTitle title="Leo-Lov - Verdens Bedste Advokatfirma!" /> */}
             <Header />
