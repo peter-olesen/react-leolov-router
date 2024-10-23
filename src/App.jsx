@@ -9,11 +9,10 @@ import { Error404 } from './pages/Error404'
 import './App.scss'
 
 function App() {
-  const helmetContext = {};
 
   return (
     <>
-      <HelmetProvider context={helmetContext}>
+      <HelmetProvider>
         <BrowserRouter>
           <Routes>
             <Route path={"/"} element={<MainLayout />}>
