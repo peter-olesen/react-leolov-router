@@ -5,7 +5,6 @@ export const Error404 = () => {
         <>
             <Helmet>
                 <title>404 Page not found</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name='description' content="Siden du ledte efter kunne ikke findes." />
                 <meta name="robots" content="noindex" />
             </Helmet>

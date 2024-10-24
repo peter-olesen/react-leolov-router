@@ -9,7 +9,6 @@ export const About = () => {
         <>
             <Helmet>
                 <title>Om Leo-Lov</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name='description' content="Om Leo-Lov siden" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Om Leo-Lov" />

@@ -9,7 +9,6 @@ export const Home = () => {
         <>
             <Helmet>
                 <title>Leo-Lov - Verdens Bedste Advokatfirma!</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name='description' content="Leo-Lov's forside" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Leo-Lov - Verdens Bedste Advokatfirma!" />
